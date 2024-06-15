@@ -18,7 +18,7 @@ first start a new codespace https://github.com/codespaces/new
 to install just copy and paste this command in your codespace terminal
 ```
 git clone https://github.com/caenjones/codespaces-desktop/
-cd codespaces-dekstop
+cd codespaces-desktop
 chmod +x install.sh
 ./install.sh
 ```
