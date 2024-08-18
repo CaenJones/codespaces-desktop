@@ -1,4 +1,3 @@
-## Install and Run
 ```
 git clone https://github.com/caenjones/codespaces-desktop/
 cd codespaces-desktop
