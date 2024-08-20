@@ -12,18 +12,14 @@ def savejson(json):
 #####################
 
 Head="""
-# DesktopOnCodespaces Installer
+# Codespaces Installer
 
-> DesktopOnCodespaces Allow you to run grapical linux and windows apps in your codespace for free.
+> Welcome! This program allows you to create your own personal desktop within codespaces! It currently supports:
 
-It Actually Have
-* Windows App Support (using wine)
-* Audio Support
-* Root Access
-* Support File Persistance
-* Entierly in web browser
-* Bypass School Network
-* Fast VMs Using KVM (Windows and Linux)
+* Windows applications 
+* Audio passthrough 
+* File Persistance
+* Running in the browser
 
 """
 InstallHead="""
