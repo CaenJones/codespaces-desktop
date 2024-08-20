@@ -23,10 +23,10 @@ Head="""
 
 """
 InstallHead="""
-# DesktopOnCodespaces Installer
+# Codespaces Installer
 """     
 
-LINES = ["KDE Plasma (Heavy)", "XFCE4 (Lightweight)", "I3 (Very Lightweight)"]
+LINES = ["KDE Plasma", "CLI"]
 
 class InstallScreen(Screen):
     CSS_PATH = "installer.tcss"
@@ -36,7 +36,7 @@ class InstallScreen(Screen):
         yield Markdown(InstallHead)
         yield Horizontal (
         Vertical (
-         Label("Default Apps (you should keep them)"),
+         Label("Default Apps"),
          SelectionList[int]( 
             ("Wine", 0, True),
             ("Brave", 1, True),
@@ -46,7 +46,6 @@ class InstallScreen(Screen):
         Vertical (
          Label("Programming"),
          SelectionList[int]( 
-            ("OpenJDK 8 (jre)", 0),
             ("OpenJDK 17 (jre)", 1),
             ("VSCodium", 2),
             id="programming"
@@ -57,7 +56,6 @@ class InstallScreen(Screen):
             ("VLC", 0),
             ("LibreOffice", 1),
             ("Synaptic", 2),
-            ("AQemu (VMs)", 3),
             ("Discord", 4),
             id="apps"
         ),),
@@ -66,7 +64,7 @@ class InstallScreen(Screen):
         yield Vertical (
          Horizontal(
             Label("\nDesktop Environement :"),
-            Select(id="de", value="KDE Plasma (Heavy)", options=((line, line) for line in LINES)),
+            Select(id="de", value="KDE Plasma", options=((line, line) for line in LINES)),
         ),)
         yield Horizontal (
             Button.error("Back", id="back"),
