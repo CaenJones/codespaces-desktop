@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntunoble
+FROM linuxserver/webtop:latest 
 
 # set version label
 ARG BUILD_DATE
